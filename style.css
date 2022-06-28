@@ -1,0 +1,416 @@
+body {
+    margin: 0;
+    display: flex;   
+}
+
+/* HEADER & TITLE */
+
+h1 {
+    font-family: Norse;
+    font-weight: bold;
+    font-size: 4rem;
+    position: relative;
+    display: inline;
+    color: white;
+    bottom: 25px;
+}
+
+header {
+    
+    flex: 0 0 33%;
+}
+
+.beach {
+    width: 100%;
+    height: 100%;
+    
+}
+
+.copy-right {
+    position: relative;
+    bottom: 40px;
+    text-align: center;
+    color: white;
+}
+
+.odin {
+    height: 83px;
+    padding: 7px;
+}
+
+.odin-container {
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 150px;
+    height: 100px;
+    width: 33%;
+    text-align: center;
+}
+
+
+/* MAIN */
+
+main {
+    flex: 0 0 67%;
+    
+}
+
+/* INTRO */
+
+.intro {
+    
+    height: 26.3%;
+    padding: 5% 5%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #eee;
+}
+
+/* ID */
+
+input, label {
+    display: block;
+}
+
+input {
+    border-radius: 4px;
+    border: solid 1px #E5E7EB;
+    padding: 5px;
+    background-color: rgb(247, 247, 247);
+}
+
+input:focus {
+    outline: 1px solid blue;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+input:invalid {
+    outline: 1px solid red;
+}
+
+.firstName {
+    flex: 0 0 30%;
+    
+}
+
+.lastName {
+    flex: 0 0 70%;
+    
+}
+
+.email {
+    flex: 0 0 30%;
+    
+}
+
+.phoneNumber {
+    flex: 0 0 70%;
+    
+}
+
+.password {
+    flex: 0 0 30%;
+    
+}
+
+.confirmPassword {
+    flex: 0 0 70%;
+    
+}
+
+.id h2 {
+    flex: 0 0 100%;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.id {
+    display: flex; 
+    flex-wrap: wrap;
+    
+    height: 33%;
+    background-color: rgb(247, 247, 247);
+    padding: 3% 5%;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+/* ACTION */
+
+.account {
+    margin-top: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.action {
+    
+    height: 20.2%;
+    padding: 3% 5% 0;
+    background-color: #eee;
+}
+
+.action a {
+    text-decoration: none;
+    color: #596D48;
+    font-weight: bold;
+}
+
+.action-button {
+    background-color: #596D48;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: bold;
+    border-radius: 7px;
+    padding: 12px 45px;
+    border-color: gray;
+    font-size: 1rem;
+    border: solid 1px gray;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+@media screen and (max-width: 546px){  
+    body {
+        display: block;
+    } 
+    header {
+        position: absolute;
+    }
+    main {
+        position: relative;
+        background-color: orange;
+        z-index: 1;
+        top: 400px;
+    }
+    .copy-right {
+        position: absolute;
+        top: 358px;
+        color: white;
+        z-index: 2;
+    }
+    .intro {
+        padding-top: 15px;
+        font-size: 0.6rem;
+    }
+    .id {
+        font-size: 0.5rem;
+    }
+    .odin-container {
+        width: 100%;
+    }
+    .info {
+        font-size: 0.65rem;
+        font-weight: 700;
+        letter-spacing: 0.2em;
+        color: #666;
+        padding: 5px;
+    }
+    .action {
+        padding: 20px;
+    }
+}
+
+@media screen and (min-width: 546px){ 
+    .intro {
+        height: 30%;
+        font-size: 0.9rem;
+    }
+    .info {
+        font-size: 0.65rem;
+        font-weight: 700;
+        letter-spacing: 0.2em;
+        color: #666;
+        padding: 5px;
+    }
+    .id {
+        height: 45%;
+    }
+    .id h2 {
+        font-size: 1.2rem;
+    }
+    .action {
+        height: 15%;
+    }
+    .account {
+        margin-top: 25px;
+    }
+}
+
+@media screen and (min-width: 670px){   
+    
+    .intro {
+        font-size: 0.8rem;
+        height: 20.2%;
+    }
+    .id {
+        font-size: 0.6rem;
+        height: 50%;
+    }
+    .firstName {
+        flex: 0 0 50%;
+        
+    }
+    
+    .lastName {
+        flex: 0 0 50%;
+        
+    }
+    
+    .email {
+        flex: 0 0 50%;
+        
+    }
+    
+    .phoneNumber {
+        flex: 0 0 50%;
+        
+    }
+    
+    .password {
+        flex: 0 0 50%;
+        
+    }
+    
+    .confirmPassword {
+        flex: 0 0 50%;
+        
+    }
+    .account {
+        margin-top: 25px;
+    }
+}
+
+
+@media screen and (min-width: 750px){   
+    
+    .intro {
+        font-size: 0.8rem;
+        height: 28.5%;
+    }
+    .id {
+        font-size: 0.8rem;
+        height: 33%;
+    }
+    .firstName {
+        flex: 0 0 45%;
+        
+    }
+    
+    .lastName {
+        flex: 0 0 50%;
+        
+    }
+    
+    .email {
+        flex: 0 0 45%;
+        
+    }
+    
+    .phoneNumber {
+        flex: 0 0 50%;
+        
+    }
+    
+    .password {
+        flex: 0 0 45%;
+        
+    }
+    
+    .confirmPassword {
+        flex: 0 0 50%;
+        
+    }
+    .action {
+        height: 20.4%;
+    }
+}
+
+
+
+@media screen and (min-width: 968px){   
+    .id {
+        height: 30%;
+    }
+    
+    .intro {
+        font-size: 1.0rem;
+    }
+    .id h2 {
+        font-size: 1.5rem;
+    }
+    
+    .firstName {
+        flex: 0 0 35%;
+        
+    }
+    
+    .lastName {
+        flex: 0 0 55%;
+        
+    }
+    
+    .email {
+        flex: 0 0 35%;
+        
+    }
+    
+    .phoneNumber {
+        flex: 0 0 55%;
+        
+    }
+    
+    .password {
+        flex: 0 0 35%;
+        
+    }
+    
+    .confirmPassword {
+        flex: 0 0 55%;
+        
+    }
+    .action {
+        height: 21.4%;
+    }
+   
+}
+
+@media screen and (min-width: 1187px){      
+    .intro {
+        font-size: 1.25rem;
+    }
+    .id {
+        font-size: 1.25rem;
+       height: 30.4%;
+    }
+    .action {
+        height: 20.5%;
+    }
+    .firstName {
+        flex: 0 0 35%;
+        
+    }
+    
+    .lastName {
+        flex: 0 0 50%;
+        
+    }
+    
+    .email {
+        flex: 0 0 35%;
+        
+    }
+    
+    .phoneNumber {
+        flex: 0 0 50%;
+        
+    }
+    
+    .password {
+        flex: 0 0 35%;
+        
+    }
+    
+    .confirmPassword {
+        flex: 0 0 50%;
+        
+    }
+}
